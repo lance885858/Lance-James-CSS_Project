@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>News Page</title>
+
+  <!-- Inserting an external style that links the html to the css page.-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Ending the external style-->
+
+  <style>
+
+  /*condencing the h1 header by adding the margin*/
+  h1{
+    margin-left: 20px;
+  }
+
+  /*aligning the h2 header*/
+  h2{
+    text-align: center;
+  }
+
+
+  /*classed both news section and styled them all the same .Aligning
+  the content to the left with a suitable height and font size. */
+
+  .news_content{
+    float: left;
+    width: 48%;
+    height: 1150px;
+    margin-left: 2%;
+    font-size: 16px;
+  }
+
+  /*giving the image a height with a slight box shadow*/
+  .news_content img{
+    height: 160px;
+    box-shadow: 7px 7px 7px #333;
+  }
+
+  /*adding a h3 black header*/
+  .news_content h3{
+    color: black;
+  }
+
+  /*removing the underline from the anchor tag*/
+  .news_content a{
+    text-decoration: none;
+  }
+
+
+  /*adding bgcolor,and giving a suitable width ,height to the table blue,also
+  floating it to the left so that it can be viewed to the left same concept
+  applies to the colors bellow*/
+
+  #blue{
+    background-color: lightblue;
+    float: left;
+    width: 25%;
+    height: 400px;
+  }
+
+  /*targeting the image by adding a padding top to aligning the
+  images on the same axis the same apllies to the colors bellow */
+  #blue img{
+    padding-top: 3px;
+  }
+
+  #red{
+    background-color: red;
+    float: left;
+    width: 25%;
+    height: 400px;
+  }
+
+  #red img{
+    padding-top: 80px;
+  }
+
+  #green{
+    background-color: green;
+    float: left;
+    width: 25%;
+    height: 400px;
+  }
+
+  #green img{
+    padding-top: 50px;
+  }
+
+  #yellow{
+    background-color: yellow;
+    float: left;
+    width: 25%;
+    height: 400px;
+  }
+
+  #yellow img{
+    padding-top: 30px;
+    padding-right: 100px;
+  }
+
+  /*This is the news holder i gave it a height of 430px and a width
+  of 100%; and a suitable font size of 17px*/
+
+  #news_content_holder{
+    height: 430px;
+    width: 100%;
+    font-size: 17px;
+  }
+
+  /*aligning the text in the center*/
+
+  #news_content_holder p{
+    text-align: center;
+  }
+
+  /*removing the underline fom the anchor tag*/
+
+  #news_content_holder a{
+    color:black;
+    text-decoration: none;
+  }
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- The start of the  normal/horizontal navbar-->
+  <nav>
+
+
+    <!-- adding hyperlinks to the navbar ,starting from the home -
+    contact page its also placed within a unordered list-->
+
+    <ul>
+      <li><a href=" CSS_project.html">HOME</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="News.html">NEWS</a></li>
+      <li><a href="Contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <!-- Ending the normal navbar-->
+
+  <h1>Also in the News</h1>
+
+  <!-- Adding a table to display the information of the news in a more
+  precise position the section consist of a h3 header ,image and a anchor tags  -->
+
+  <section class="news_content">
+    <table>
+
+      <td><h3>South Africa</h3></td>
+      <tr>
+        <td><img src="images\car crash.jpg" alt="" width="160px" height="50px"></td>
+        <td><a href="#">Five killed in Limpopo crash</a></td>
+      </tr>
+
+      <td><h3>Business</h3></td>
+      <tr>
+        <td><img src="images\numsa.jpeg" alt="" width="160px" height="50px"></td>
+        <td><a href="#">Numsa welcomes P Protector probe into SAA, threatens strike action</a></td>
+      </tr>
+
+      <td><h3>Opinion</h3></td>
+      <tr>
+        <td><img src="images\mining.png" alt="" width="160px" height="50px"></td>
+        <td><a href="#">Shedding light on why mining firms in eastern Congo are under attack</a></td>
+      </tr>
+
+      <td><h3>Science</h3></td>
+      <tr>
+        <td><img src="images\greys.jpg" alt="" width="160px" height="50px"></td>
+        <td><a href="#">KZN government plants trees to encourage healthy eating</a></td>
+      </tr>
+
+      <td><h3>Africa</h3></td>
+      <tr>
+        <td><img src="images\ruto.jpg" alt="" width="160px" height="50px"></td>
+        <td><a href="#">We're ready for fresh elections: Ruto</a></td>
+      </tr>
+
+    </table>
+  </section>
+
+  <!-- This content will display the same as the one above ,
+      however it is aligned on the right hand side in atable form -->
+  <section class="news_content" >
+    <table>
+
+      <td><h3>World</h3></td>
+      <tr>
+        <td><img src="images\russia.jpg" alt="" width="160px" height="50px"></td>
+        <td><a href="#">Russia's Putin won't attend UN General Assembly</a></td>
+      </tr>
+
+      <td><h3>Lifestyle</h3></td>
+      <tr>
+        <td><img src="images\serena.jpg" alt="" width="160px" height="50px"></td>
+        <td><a href="#">Serena Williams gives birth to baby girl-coach</a></td>
+      </tr>
+
+
+      <td><h3>Sport</h3></td>
+      <tr>
+        <td><img src="images\baffana.jpg" alt="" width="160px" height="50px"></td>
+        <td><a href="#">Bafana’s World Cup hopes suffer a blow in Cape Verde, go down 2-1</a></td>
+      </tr>
+
+      <td><h3>Politics</h3></td>
+      <tr>
+        <td><img src="images\anc.jpg" alt="" width="160px" height="50px"></td>
+        <td><a href="#">KZN ANCWL 5th Provincial Elective Conference underway in Durban</a></td>
+      </tr>
+    </table>
+  </section>
+
+  <aside id="news_content_holder">
+    <!--information about the blue table adding hyperlinks and images also making use of id tags to style the conent internally.-->
+    <div id="blue">
+      <h2><a href="#">SABC Editorial Policy</a></h2>
+      <p>The South African Broadcasting Corporation (SABC)is embarking on a review process of its 2004 Editorial Policies, which were developed through a consultation process with the public at large.</p>
+      <img src="images\editorial.jpg" alt="icon" width="140px" height="120px">
+    </div>
+
+
+    <!--information about the blue table adding hyperlinks and images also making use of id tags to style the conent internally.-->
+    <div id="red">
+      <h2><a href="#">Albert Luthuli 50 years later</a></h2>
+      <p>50th death anniversary of Chief Albert Luthulitd</p>
+      <img src="images\luthuli.jpg" alt="" width="140px" height="120px">
+    </div>
+
+
+    <!--information about the blue table adding hyperlinks and images
+    also making use of id tags to style the conent internally.-->
+
+    <div id="green">
+      <h2><a href="#">WEF on Africa 2017</a></h2>
+      <p>Parliamentary interviews for candidates shortlisted to fill the 12 non-executive Board positions at the South African Broadcasting Corporation (SABC).</p>
+      <img src="images\event.jpg" alt="" width="140px"  height="120px">
+    </div>
+
+    <!--information about the blue table adding hyperlinks and images
+    also making use of id tags to style the conent internally.-->
+
+    <div id="yellow">
+      <h2><a href="#">SABC Board interviews</a></h2>
+      <p>The World Economic Forum (WEF) on Africa takes place in Durban, South Africa on 3 - 5 May 2017. Get the latest news about the event</p>
+      <img src="images\parliamentary.jpg" alt="" width="140px" height="120px">
+    </div>
+  </aside>
+
+
+  <!-- Inserting a footer-->
+  <footer>
+    <!-- Inserting images as hyperlinks to the footer of the news page-->
+    <a href=""><img src="images\sabc news.jpg" alt="sabc" width="90px" height="40px"></a>
+    <a href="https://twitter.com/SABCGroupSales"> <img src="images\twitter icon.png" alt="twitter" width="40px" height="40px"></a>
+    <a href="https://www.facebook.com/SABC-Group-Sales-292539714240864/"><img src="images\facebook icon.png" alt="facebook" width="40px" height="40px"></a>
+    <a href="https://www.youtube.com/user/SABCgsm"><img src="images\youtube icon.png" alt="youtube" width="40px" height="40px"></a>
+
+    <!-- Inserting images as hyperlinks-->
+
+    <!-- Inserting  hyperlinks inside the footer of the news page -->
+
+    <a href="">About the SABC</a>
+    <a href="">Advertise</a>
+    <a href="">Contact us </a>
+    <a href="">disclaimer</a>
+    <a href="">Tenders </a>
+    <a href="">press releases</a>
+    <a href="">Job </a>
+    <a href="">site map</a>
+    <a href=""> <img src="images\iab.png" alt="sabc" width="50px" height="40px"></a>
+  </footer>
+  <!-- Ending the  footer tag-->
+</body>
+
+</html>

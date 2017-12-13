@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Page</title>
+
+  <!-- Inserting an external style that links the html to the css page.-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Ending the external style-->
+
+
+  <style>
+
+  /*adding a border around the contact top  ,with a thickness
+  of 2px,a gray solid color and a suitable width and height
+  also condenced the section by adding margin*/
+
+  #contact_form_top{
+    border: 2px solid gray;
+    width: 60%;
+    margin-left: 1.5%;
+    margin-top: 50px;
+  }
+
+  /*adding 25% padding t the top images*/
+  #contact_form_top img{
+    padding-left: 25%;
+  }
+
+  /*adjusting the button below the top images by giving it a 30% padding left*/
+  #contact_form_top figcaption{
+    padding-left: 30%;
+  }
+
+  /*targeting the anchor tag of the contact top form
+  and removing the line and changing the text to black */
+
+  #contact_form_top a{
+    color: black;
+    text-decoration: none;
+  }
+
+  /*adding a border around the form content section ,with a thickness of 2px,
+  a gray solid color and a suitable width and height */
+
+  #contact_form_content{
+    border: 2px solid gray;
+    width: 60%;
+    margin-left: 1.5%;
+    margin-bottom: 10px;
+    font-size: 17px;
+    height: 700px;
+  }
+
+  /*aligning the h2 and p tg by adding padding*/
+
+  #contact_form_content h2,p{
+    padding-left: 20px;
+  }
+
+  /*aligning the sidebar to the right ,ocuppying a width of 30%*/
+  #sidebar{
+    float: right;
+    width: 30%;
+  }
+
+  /*aligning the iframe with the rest of the sidebar content*/
+  #sidebar iframe{
+    padding-left: 50px;
+  }
+
+  /*classed the information within the from section to
+  become condence i achieved this by adding a suitable margin*/
+
+  .button_aligned{
+    margin-left:20px;
+    margin-bottom: 10px;
+  }
+
+</style>
+
+
+</head>
+
+<body>
+
+  <!-- The start of the  normal/horizontal navbar-->
+
+  <nav>
+
+    <!-- adding hyperlinks to the navbar ,starting from the
+    home -contact page its also placed within a unordered list-->
+    <ul>
+      <li><a href="CSS_project.html">HOME</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="News.html">NEWS</a></li>
+      <li><a href="Contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <!-- Ending the normal navbar-->
+
+
+  <!-- The sidebar is inserted within an aside section-->
+  <aside id="sidebar">
+    <!-- inserting  a image aswell as adding hyperlinks to the sidebar ,this is done within the aside section-->
+    <img src="images\Edu.jpg" width="220px" height="170px">
+    <img src="images\sideimage.PNG" width="220px" height="190px">
+    <iframe width="220" height="190" src="https://www.youtube.com/embed/FrcFtIRRfuU?list=PL09A9482D217EEDBD" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </aside>
+
+  <!-- ending the hyperlnks and image tags for the sidebar,this is done within the aside section-->
+  <section id="contact_form_top">
+    <!-- the start of the table-->
+    <table>
+      <tr>
+        <!-- adding images in a form of table data,aswell as figcaption which is text below the image,aswell as the button function .-->
+        <td>
+          <img src="images\emailus.png" width="100px" height="100px">
+          <figcaption><button><a href="#">Email US</a></button></figcaption>
+        </td>
+
+
+        <!-- adding images in a form of table data,aswell as figcaption which is text below the image,aswell as the button function .-->
+        <td>
+          <img src="images\physical.png" width="100px" height="100px">
+          <figcaption><button><a href="#">Physical Adress</a></button></figcaption>
+        </td>
+
+        <!-- adding images in a form of table data, aswell as figcaption which is text below the
+        image,aswell as the button function .-->
+
+        <td>
+          <img src="images\postal.png" width="100px" height="100px">
+          <figcaption><button><a href="#">Postal details</a></button></figcaption>
+        </td>
+
+
+        <!-- adding images in a form of table data,aswell as figcaption which is text below the
+        image,aswell as the button function .-->
+
+        <td>
+          <img src="images\contact.png" width="100px" height="100px">
+          <figcaption><button><a href="#">Contact details</a></button></figcaption>
+        </td>
+      </tr>
+    </table>
+
+    <!-- the ending  of the table and the tags mentioned from the above-->
+    <br>
+
+  </section>
+
+  <section id="contact_form_content">
+
+    <!-- Inserting a header for the email within a form function-->
+    <h2>Email us</h2>
+
+
+    <p>Fill out the form to send your comments, queries and feedback to the SABC</p>
+
+    <p>Please select a category for your request:</p>
+
+    <!-- inserting a select option tag ,that has a drop down list-->
+    <select class="button_aligned">
+      <option>Select a category</option>
+      <option>TV License enqueries</option>
+      <option>Visit the SABC</option>
+      <option>Genetic enqueries</option>
+      <option>Programmes enqueries</option>
+      <option>Programmes proposals</option>
+      <option>Programmes purchases</option>
+      <option>TV and radio signal reception problems</option>
+      <option>SABC 1 queries</option>
+      <option>SABC 2 queries</option>
+      <option>SABC 3 queries</option>
+      <option>Advertising on SABC platforms</option>
+      <option>Complains about SABC services</option>
+      <option>SABC internships</option>
+      <option>CSI proposals</option>
+      <option>Sabc encore enquires</option>
+    </select>
+
+    <!-- ending the select options and closing
+    all the tags mentioned from the above.-->
+
+    <br>
+
+    <!-- Inserting a Name field-->
+
+    <p>Name:</p>
+    <input  class="button_aligned" type="text" name="First name"><br>
+
+
+    <!-- Inserting a email field-->
+
+    <p>Email:</p>
+    <input class="button_aligned" type="email" name="email"><br>
+
+    <!-- Inserting a subject box-->
+
+    <p>Subject:</p>
+    <input  class="button_aligned" type="text" name="First name"><br>
+
+    <!-- Inserting a comment box-->
+
+    <p>Feedback/Comment</p>
+    <textarea  class="button_aligned" name="Message" rows="10" cols="35"> Type here...</textarea><br>
+
+    <!-- Inserting a reset,send button-->
+
+    <input class="button_aligned" type="Reset" name="reset">
+    <input  type="submit" name="send servey ">
+
+  </section>
+
+  <br>
+
+  <footer>
+    <!--Social media hyperlinks ,comes with a suitable height and width  -->
+    <a href=""> <img src="images\sabc news.jpg" alt="sabc" width="90px" height="40px"></a>
+    <a href="https://twitter.com/SABCGroupSales"> <img src="images\twitter icon.png" alt="twitter" width="40px" height="40px"></a>
+    <a href="https://www.facebook.com/SABC-Group-Sales-292539714240864/"><img src="images\facebook icon.png" alt="facebook" width="40px" height="40px"></a>
+    <a href="https://www.youtube.com/user/SABCgsm"><img src="images\youtube icon.png" alt="youtube" width="40px" height="40px"></a>
+
+    <!-- External anchor tags this will display as dummy links -->
+    <a href="">About the SABC</a>
+    <a href="">Advertise</a>
+    <a href="">Contact us </a>
+    <a href="">disclaimer</a>
+    <a href="">Tenders </a>
+    <a href="">press releases</a>
+    <a href="">Job </a>
+    <a href="">site map</a>
+    <a href=""><img src="images\iab.png" alt="sabc" width="50px" height="40px"></a>
+  </footer>
+
+
+</body>
+
+</html>

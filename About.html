@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About page</title>
+
+  <!-- Inserting an external style that links the html to the css page.-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Ending the external style-->
+
+  <style>
+
+  /*styling section 1 giving it a suitable width,floating the
+    section left,adding a rgb color to it also changing the font size ect*/
+
+  #about_content_header{
+    float: left;
+    width: 60%;
+    background-color:rgb(98, 173, 93) ;
+    color: white;
+    padding:10px;
+    height: auto;
+    font: 17px 'lato','ópen sans', san-serif;
+    margin: 0;
+    border: rgb(98, 173, 93) 10px solid;
+    margin-left: 1.5%;
+  }
+
+  /*styling section 2 giving it a suitable width,floating the
+    section left,adding a rgb color to it also changing the font size ect*/
+
+  #about_content{
+    float: left;
+    width: 60%;
+    background-color: white;
+    color: black;
+    padding:10px;
+    height: auto;
+    font: 16px 'lato','ópen sans', san-serif;
+    margin: 0;
+    border: rgb(98, 173, 93) 10px solid;
+    padding-bottom: 100px;
+    margin-left: 1.5%;
+    margin-bottom: 20px;
+  }
+
+  /*styling the sidebar giving it a suitable width,floating the
+    section left,adding a rgb color to it also changing the font size ect*/
+
+  #sidebar{
+    float: right;
+    width: 20%;
+    background-color: white;
+    height: 300px;
+    border: 10px solid blue;
+    margin: 0;
+    position: fixed;
+    margin-left: 640px;
+  }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- The start of the  normal/horizontal navbar-->
+  <nav>
+
+    <!-- adding hyperlinks to the navbar ,starting from the
+         home -contact page its also placed within a unordered list-->
+
+    <ul>
+      <li><a href="CSS_project.html">HOME</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href="News.html">NEWS</a></li>
+      <li><a href="Contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <!-- The end of the  normal/horizontal navbar-->
+
+
+  <!-- The sidebar is inserted within an aside section-->
+  <aside id="sidebar">
+
+    <!-- inserting a image aswell as adding hyperlinks to
+         the sidebar ,this is done within the aside section-->
+    <a href="#"><img src="images\Edu.jpg" width="200px" height="300px"></a>
+  </aside>
+
+  <!-- ending the hyperlnks and image tags for the sidebar,this is done within the aside section-->
+
+  <!-- within the section tag i inserted a h1 and also implemented the id function-->
+  <section id="about_content_header">
+    <h1>About us</h1>
+  </section>
+
+  <!-- adding a h2 heading,styling it bold,aswell as using paragraph
+       tags,this is done within a section ,and styling it as a id-->
+
+  <section id="about_content">
+
+    <!-- Inserting a bold h2 header-->
+    <h2><b>Who are we?</b></h2>
+
+    <!-- Inserting paragraphs  within the about content to display the text on the webpage -->
+
+    <p>SABC Group Sales and Marketing falls under the Commercial Enterprise Division of the South African Broadcasting Corporation (SABC). SABC Group Sales and Marketing is the premier powerhouse of commercial media sales and airtime sponsorships, spanning a vast and diverse brand offering across television, radio, digital and mobile platforms.</p>
+
+    <p>Through the SABC’s four enticing television channels and its dynamic 18 radio stations, SABC GSM provides an easily accessible, high quality driven and client value based media solutions platform for our current and prospective clients.</p>
+
+    <h2><u>The services we offer include:</u></h2>
+
+    <!-- Adding square list to the  information below-->
+
+    <ul type="square">
+      <li>Generic and customised media sales opportunities</li>
+      <li>On-Air Sponsorship solutions</li>
+      <li>Stations events sponsorship opportunities</li>
+      <li>Specialised media strategy solutions</li>
+      <li>Consumer, audience and environmental analysis</li>
+      <li>Radio advertising production facilities</li>
+
+    </ul>
+    <p>For more information on who to contact go to our contact us page</p>
+
+  </section>
+
+  <!-- This is my footer holder .It consist  social media links
+  as well as external anchor tags .This will display in at
+  the bottom of my browser-->
+
+  <footer>
+
+    <!--Social media hyperlinks ,comes with a suitable height and width  -->
+    <a href=""> <img src="images\sabc news.jpg" alt="sabc" width="90px" height="40px"></a>
+    <a href="https://twitter.com/SABCGroupSales"> <img src="images\twitter icon.png" alt="twitter" width="40px" height="40px"></a>
+    <a href="https://www.facebook.com/SABC-Group-Sales-292539714240864/"><img src="images\facebook icon.png" alt="facebook" width="40px" height="40px"></a>
+    <a href="https://www.youtube.com/user/SABCgsm"><img src="images\youtube icon.png" alt="youtube" width="40px" height="40px"></a>
+
+
+    <!-- External anchor tags this will display as dummy links -->
+
+    <a href="">About the SABC</a>
+    <a href="">Advertise</a>
+    <a href="">Contact us </a>
+    <a href="">disclaimer</a>
+    <a href="">Tenders </a>
+    <a href="">press releases</a>
+    <a href="">Job </a>
+    <a href="">site map</a>
+    <a href=""><img src="images\iab.png" alt="sabc" width="50px" height="40px"></a>
+  </footer>
+
+</body>
+
+</html>

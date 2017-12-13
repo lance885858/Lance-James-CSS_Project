@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Home Page</title>
+
+  <!-- Inserting an external style that links the html to the css page.-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Ending the external style-->
+
+  <style>
+
+  /*Aligning my h3 heading by adding padding for better placement*/
+  h3{
+    padding-left: 10px;
+  }
+
+  /*adding a border around the top left content.Aligning the conentby floating it
+  to the left of my page,also giving it a suitable width of 65% to occupy a greater
+  percentage of the page i also gave it padding and margin to condence the outcome*/
+
+  #home_content_aligned_left{
+    float: left;
+    border: 2px solid gray;
+    width: 65%;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+
+  /*adding a figcaption to the bottom of the image,im giving
+  it a suitable height and width to compliment the image above it. */
+
+  figcaption{
+    width: 350px;
+    height: 50px;
+  }
+
+  /*aligned the text in the home content left bellow the main image and
+  giving it a font size of 17px aswell as some padding*/
+
+  #home_content_text{
+    float: left;
+    padding-left: 5px;
+    font-size: 17px;
+  }
+
+  /*adding width and floating the image left of the page so thhat it
+  /appears to the left side of the page ,with a suitable width as well as padding*/
+
+  #home_content_image{
+    width: 52%;
+    float: left;
+    padding-left: 5px;
+    padding-top: 5px;
+  }
+
+  /*Aligning the content of the holder to the left and
+  a width to occupy a percentage of the page*/
+
+  #home_content_holder{
+    float: left;
+    width: 65%;
+  }
+
+  /*this is the stylying for all the text within the home content holder adding a border top ,padding and margin to condence the outcome as well as a font size of 17px*/
+  .home_content{
+    border-top-style: solid;
+    border-top-width: 4px;
+    border-top-color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    font-size: 17px;
+  }
+
+  /*fixed sidebar images with a condenced outcome using margin*/
+  #sidebar{
+    position: fixed;
+    margin-left: 600px;
+    margin-bottom: 550px;
+  }
+
+</style>
+
+</head>
+
+<body>
+
+  <!-- The start of the  normal/horizontal navbar-->
+  <nav>
+    <!-- adding hyperlinks to the navbar ,starting from the home -contact page its also placed within a unordered list-->
+    <ul>
+      <li><a href="CSS_project.html">HOME</a></li>
+      <li><a href="About.html">ABOUT</a></li>
+      <li><a href= "News.html">NEWS</a></li>
+      <li><a href="Contact.html">CONTACT US</a></li>
+    </ul>
+  </nav>
+  <!-- Ending the normal/horizontal navbar and unordered list-->
+
+
+  <!-- The sidebar is inserted within an aside section which consist
+  of two fixed images with identicle height and width -->
+
+  <aside id="sidebar">
+
+    <!-- inserting  a image aswell as adding hyperlinks to the sidebar ,this is done within the aside section-->
+    <a href="#"><img src="images\Edu.jpg" alt="sidebar_image" width="300px" height="200px"></a>
+    <a href="#"><img src="C:\Users\Academy8\Pictures\Saved Pictures/grace picture.jpg" alt="sidebar_image" width="300px" height="200px"></a>
+  </aside>
+
+
+
+  <h3 style="color:gray">SOUTH AFRICA</h3>
+
+  <!-- This home content will display on the top left of the browser.
+  It consist of a main image with a suitable height and width,below
+  it I inserted a figcaption which is blue followed by a h1-h4 heading
+  and a white text color-->
+
+  <section id="home_content_aligned_left">
+
+    <!-- This id will only target the image and the blue figcaption -->
+    <section id="home_content_image">
+
+      <img src="images\explosives.png" alt="explosives" width="350px" height="200px">
+      <figcaption style="background-color:rgb(78,110,229);font-size:14px;color:white">Military explosives and R5 ammunition were recovered by police in a former soldiers home in Limpopo</figcaption>
+    </section>
+
+    <!-- For better stylying i gave this section a id of its own ,
+    When stylying this id will only target my h1-h4 heading and my paragraphs -->
+
+    <section id="home_content_text">
+      <h1><a href="#">Limpopo police uncover explosives and ammunition"</a></h1>
+      <h4 style="color:gray">Friday 1 September 2017 05:44</h4>
+      <p>The Hawks have uncovered a cache of explosives and ammunition at Louis Trichardt in Limpopo.</p>
+    </section>
+  </section>
+
+
+  <!--  This is the  home content holder ,This id carries multiple classed
+  divs .Which all has the same styling throughout-->
+
+  <section id="home_content_holder">
+
+    <!-- the classed home content consist of images with a suitable width and
+    height ,h2-h4 and white text color ...followed by anchor tags which
+    will all be dummy links .The same will apply to all the classed home
+    content bellow -->
+
+    <div class="home_content">
+
+      <img src="images\zwane.jpeg" alt="news" width="150px" height="110px">
+      <h2><a href="#">Mine safety should be thoroughly regulated:Zwane</a></h2>
+      <h4 style="color:gray">Friday 1 September 2017 16:25</h4>
+      <p>Mine safety should be thoroughly regulated says Mineral Resource Minister Msebenzi.</p>
+      <p>zwane</p>
+
+      <h4 style="color:red">Tags:</h4>
+
+      <a href="#">Gauteng</a>  <a href="#">Johannesburg</a>  <a href="#">Mineral Resource</a>   <a href="#">Harmony Kusasalethu mine</a>  <a href="#">Msebenzi Zwane</a>  <a href="#">Mahlako Komane</a>
+    </div>
+
+    <div class="home_content">
+
+      <img src="images\blade nzimande.jpg" width="150px" height="110px">
+      <h2><a href="#">Nzimande demands probe into NSFAS R14mln error</a></h2>
+      <p style="color:gray">Friday 1 September 2017 16:24</p>
+      <p>Higher Education Minister Blade Nzimande wants a probe into the distribution of NSFAS </p>
+      <p>funds<p>
+
+        <h4 style="color:red">Tags:</h4>
+        <a href="#">South Africa</a>   <a href="#">Higher Education</a>  <a href="#">NSFAS Blade Nzimande</a>   <a href="#">Manqoba Mchunu</a> <a href="#">Sizwe Nxasana</a>
+      </div>
+
+      <div class="home_content">
+        <img src="images\hawks arrest.png" width="150px" height="110px" >
+        <h2><a href="#">Hawks arrest suspected loan sharks at SASSA paypoint</a></h2>
+        <p style="color:gray"> Friday 1 September 2017 18:46</p>
+        <p>The Hawks in Limpopo have arrested three suspected loan sharks at a SASSA paypoint</p>
+
+        <h4 style="color:red">Tags</h4>
+        <a href="#">Limpopo</a>  <a href="#">Phalaborwa</a>  <a href="#"> Namakgale</a>   <a href="#"> Hawks </a>   <a href="#"> SASSA</a>  <a href="#"> Matimba Maluleke</a>    <a href="#">Lutendo Bobodi</a>
+      </div>
+
+      <div class="home_content">
+
+        <img src="images\board candidate.png" width="150px" height="110px">
+        <h2><a href="#">SABC board candidate lists Zuma, Bathabile Dlamini as references</a></h2>
+        <p style="color:gray">Friday 1 September 2017 18:33</p>
+        <p>A candidate being interviewed for a position on the SABC board has caused the first major conflict among members of the Communications Committee conducting the process.</p>
+
+        <h4 style="color:red">tags</h4>
+        <a href="#">  Western Cape</a>   <a href="#"> Cape Town</a>   <a href="#">Parliament</a>   <a href="#"> SABC board </a>   <a href="#">Cikizwa Dingi</a>   <a href="#"> President Jacob Zuma</a>    <a href="#"> Bathabile Dlamini</a>   <a href="#">Jackson Mthembu</a>
+      </div>
+
+      <div class="home_content">
+        <img src="images\sabc news.jpg" width="150px" height="110px">
+        <h2>  <a href="#">SABC News Live Blog: 2 September 2017</a></h2>
+        <p style="color:gray">Saturday 2 September 2017 09:09</p>
+        <p>Get the latest News as it happens on the SABC News Live Blog.</p>
+
+        <h4 style="color:red">Tags</h4>
+        <a href="#">SABC News Live</a>
+      </div>
+
+      <div class="home_content">
+        <img src="images\Ramaphosa.jpg" width="150px" height="110px">
+        <h2><a href="#">Price fixing hampers development: Cyril</a></h2>
+        <p style="color:gray">Saturday 2 September 2017 07:34</p>
+        <p>Deputy President Cyril Ramaphosa has warned against cartels saying that price fixing hampers development, reduces job opportunities and causes undue hikes in the prices of goods.</p>
+
+        <h4 style="color:red">Tags</h4>
+
+        <a href="#">Guateng</a>  <a href="#"> Johannesburg</a>  <a href="#"> Cyril Ramaphosa</a>
+      </div>
+
+      <div class="home_content">
+        <img src="images\court.jpg" width="150px" height="110px">
+        <h2><a href="#">Father arrested for beating child to death</a></h2>
+        <p style="color:gray">Saturday 2 September 2017 06:56</p>
+        <p>A Johannesburg man is due to appear in court soon after he allegedly beat his five-year old son to death.</p>
+
+        <h4 style="color:red">Tag</h4>
+        <a href="#">Gauteng</a>  <a href="#">Johannesburg</a>   <a href="#">Kay Makhubele</a>
+      </div>
+
+      <div class="home_content">
+        <img src="images\suspended_matriculants.jpeg" width="150px" height="110px">
+        <h2><a href="#">55 suspended matriculants back at school</a></h2>
+        <p style="color:gray">Friday 1 September 2017 19:56</p>
+        <p>55 matriculants from Boshof High school in the western Free State are back at school after being suspended this week.</p>
+
+        <h4 style="color:red">Tag</h4>
+        <a href="#">Free State </a>  <a href="#">Boshof High school</a>  <a href="#">Howard Ndaba</a>  <a href="#"> Ishmael Modiba</a>
+
+      </div>
+
+      <div class="home_content">
+        <img src="images\suspended_teachers.jpg" width="150px" height="110px">
+        <h2><a href="#">Northen Cape teachers suspended</a></h2>
+        <p style="color:gray">Friday 1 September 2017 19:07</p>
+        <p>Three teachers at a high school in the Northern Cape have been suspended.</p>
+
+        <h4 style="color:red">Tags</h4>
+        <a href="#">Northern Cape</a>   <a href="#">Bothitong</a>   <a href="#">Kuruman </a>  <a href="#">Geoffrey van der Merwe</a>  <a href="#">Bothitong High School</a>
+      </div>
+
+      <div class="home_content">
+        <img src="images\hijacked.jpeg" width="150px" height="110px" >
+        <h2><a href="#">Foreign nationals nabbed for hijacked buildings in Johannesburg</a></h2>
+        <p style="color:gray">Saturday 2 September 2017 09:10</p>
+        <p>Close to thirty people have been arrested following a raid targeted at hijacked buildings in Berea and Hillbrow areas in Johannesburg.</p>
+      </div>
+
+    </section>
+
+    <!-- This is my footer holder .It consist  social media links as well
+         as external anchor tags .This will display in at the bottom of my browser-->
+
+    <footer>
+
+      <!--Social media hyperlinks ,comes with a suitable height and width  -->
+      <a href=""><img src="images\sabc news.jpg" alt="sabc" width="90px" height="40px"></a>
+      <a href="https://twitter.com/SABCGroupSales"><img src="images\twitter icon.png" alt="twitter" width="40px" height="40px"></a>
+      <a href="https://www.facebook.com/SABC-Group-Sales-292539714240864/"><img src="images\facebook icon.png" alt="facebook" width="40px" height="40px"></a>
+      <a href="https://www.youtube.com/user/SABCgsm"><img src="images\youtube icon.png" alt="youtube" width="40px" height="40px"></a>
+
+      <!-- External anchor tags this will display as dummy links -->
+      <a href="">About the SABC</a>
+      <a href="">Advertise</a>
+      <a href="">Contact us </a>
+      <a href="">disclaimer</a>
+      <a href="">Tenders </a>
+      <a href="">press releases</a>
+      <a href="">Job </a>
+      <a href="">site map</a>
+      <a href=""> <img src="images\iab.png" alt="sabc" width="50px" height="40px"></a>
+    </footer>
+
+  </body>
+
+  </html>

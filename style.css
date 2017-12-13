@@ -1,0 +1,82 @@
+/*This is a stylesheet*/
+
+/*  Condencing the webpage by adding marging left and
+    right to the body,as well as adding a bg color to the browser*/
+
+body{
+  background-color: lightgray;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/*Adding margin and padding to the navbar*/
+nav{
+  margin:5px;
+  padding: 10px;
+}
+/*Ending the margin and padding to the navbar*/
+
+
+/* Removing the bullets from the unordered list ,also adding a blue bg color*/
+nav ul{
+  list-style-type: none;
+  background-color: blue;
+}
+
+
+/*aligning the hyperlinks horizontal ,giving bgcolor and a border(right)*/
+nav li {
+  display: inline-block;
+  background-color: blue;
+  margin: 5px;
+  padding: 5px;
+}
+/*Ending of the  above tags*/
+
+
+/*adding color to the text,and spacing*/
+nav li a{
+  color: white;
+  margin: 30px;
+  padding:30px;
+  text-decoration: none;
+}
+/*ending the spacing*/
+
+
+
+/*underlining the hover,when you hover over it*/
+nav li a:hover{
+  color:gray;
+}
+/*ending off the above tags*/
+
+
+
+/*moving image to the right */
+aside{
+  float: right;
+  width: 30%;
+  margin-top: 50px;
+}
+
+aside img{
+  padding-bottom: 15px;
+  padding-left: 50px;
+}
+
+/*making  the text white inside the footer*/
+footer a{
+  color: white;
+  margin:2px;
+}
+
+/*adding color to the footer*/
+footer{
+  background-repeat: no-repeat;
+  clear: both;
+  background-color: blue;
+  padding-top: 10px;
+  margin-left: 15px;
+  padding-left: 30px;
+}
